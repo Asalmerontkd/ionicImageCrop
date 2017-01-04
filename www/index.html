@@ -31,6 +31,7 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/cropimage.js"></script>
   </head>
   <body ng-app="starter">
 
@@ -39,6 +40,11 @@
         <h1 class="title">Ionic Blank Starter</h1>
       </ion-header-bar>
       <ion-content>
+        <div class="button-bar">
+          <a class="button" onclick="tomarFoto();">Toma foto</a>
+        </div>
+
+        <img id="myImage">
       </ion-content>
     </ion-pane>
   </body>
