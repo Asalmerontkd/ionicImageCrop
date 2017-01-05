@@ -9,7 +9,7 @@ function tomarFoto()
 }
 
 function onSuccess(imageURI) {
-	plugins.crop(successCrop, failCrop, imageURI, { quality: 100 });
+	plugins.crop(successCrop, failCrop, imageURI, { quality: 100, correctOrientation: true });
 }
 
 function onFail(message) {
